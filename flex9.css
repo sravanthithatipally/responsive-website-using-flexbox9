@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap");
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+}
+
+.bgcontainer {
+    background-image: url("https://assets.ccbp.in/frontend/intermediate-rwd/travel-sm-bg.png");
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.heading {
+    font-family: "roboto";
+    color: white;
+    font-size: 35px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.about {
+    font-family: "roboto";
+    color: white;
+    text-align: center;
+    font-size: 20px;
+}
+
+.button1 {
+    border-color: white;
+    border-style: solid;
+    padding: 10px;
+    border-radius: 20px;
+    margin: 10px;
+    background-color: transparent;
+    height: 50px;
+    font-family: "roboto";
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+}
+
+.button2 {
+    background-color: white;
+    color: #183b56;
+}
+
+.buttonsection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.content {
+    width: 90%;
+    max-width: 450px;
+}
+
+@media screen and (min-width: 768px) {
+    .bgcontainer {
+        background-image: url("https://assets.ccbp.in/frontend/intermediate-rwd/travel-md-bg.png");
+        align-items: center;
+    }
+
+    .heading {
+        font-size: 40px;
+    }
+
+    .buttonsection {
+        flex-direction: row;
+    }
+
+    .content {
+        max-width: 600px;
+    }
+}
